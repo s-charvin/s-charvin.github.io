@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>charvin&#39;s blog</title>
+  
+  <subtitle>blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://charvin.cn/"/>
+  <updated>2019-01-23T08:47:00.000Z</updated>
+  <id>https://charvin.cn/</id>
+  
+  <author>
+    <name>大傻瓜</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML 标记标签</title>
+    <link href="https://charvin.cn/2019/01/23/HTML%20tags/"/>
+    <id>https://charvin.cn/2019/01/23/HTML tags/</id>
+    <published>2019-01-23T08:47:00.000Z</published>
+    <updated>2019-01-23T08:47:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;HTML-标记标签&quot;&gt;&lt;a href=&quot;#HTML-标记标签&quot; class=&quot;headerlink&quot; title=&quot;HTML 标记标签&quot;&gt;&lt;/a&gt;HTML 标记标签&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;有智者立长志，无志者长立志。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML" scheme="https://charvin.cn/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown For Typora</title>
+    <link href="https://charvin.cn/2019/01/23/Markdown%20For%20Typora/"/>
+    <id>https://charvin.cn/2019/01/23/Markdown For Typora/</id>
+    <published>2019-01-22T18:10:00.000Z</published>
+    <updated>2019-01-22T18:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;常用Typora-Markdown语法-以备写文章所需&quot;&gt;&lt;a href=&quot;#常用Typora-Markdown语法-以备写文章所需&quot; class=&quot;headerlink&quot; title=&quot;常用Typora_Markdown语法. 以备写文章所需.&quot;&gt;&lt;/a&gt;常用Typora_Markdown语法. 以备写文章所需.&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;每天收获小进步，积累起来就是大进步；&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="https://charvin.cn/tags/Markdown/"/>
+    
+      <category term="Typora" scheme="https://charvin.cn/tags/Typora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello-word</title>
+    <link href="https://charvin.cn/2019/01/22/hello-world/"/>
+    <id>https://charvin.cn/2019/01/22/hello-world/</id>
+    <published>2019-01-22T14:00:00.000Z</published>
+    <updated>2019-01-22T18:10:00.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Hello-Word&quot;&gt;&lt;a href=&quot;#Hello-Word&quot; class=&quot;headerlink&quot; title=&quot;Hello-Word!!!&quot;&gt;&lt;/a&gt;Hello-Word!!!&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;太阳总是新的，每天都是美好的日子。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Hello" scheme="https://charvin.cn/tags/Hello/"/>
+    
+  </entry>
+  
+</feed>
