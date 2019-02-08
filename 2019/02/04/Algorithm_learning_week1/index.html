@@ -15,17 +15,18 @@
 
 
 
-<meta name="description" content="blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="404 Not Found：该页无法显示">
-<meta property="og:url" content="https://charvin.cn/404.html">
+<meta name="description" content="第一周学习算法,一定要坚持到底! 如果放弃太早，你永远都不知道自己会错过什么；">
+<meta name="keywords" content="学习,算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法学习第一周">
+<meta property="og:url" content="https://charvin.cn/2019/02/04/Algorithm_learning_week1/index.html">
 <meta property="og:site_name" content="charvin&#39;s blog">
-<meta property="og:description" content="blog">
+<meta property="og:description" content="第一周学习算法,一定要坚持到底! 如果放弃太早，你永远都不知道自己会错过什么；">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-22T15:20:55.448Z">
+<meta property="og:updated_time" content="2019-02-04T07:48:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="404 Not Found：该页无法显示">
-<meta name="twitter:description" content="blog">
+<meta name="twitter:title" content="算法学习第一周">
+<meta name="twitter:description" content="第一周学习算法,一定要坚持到底! 如果放弃太早，你永远都不知道自己会错过什么；">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -57,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>404 Not Found：该页无法显示 | charvin&#39;s blog</title>
+<title>算法学习第一周 | charvin&#39;s blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,7 +68,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -244,11 +245,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Algorithm_learning_week1" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/404.html" class="article-date">
-      <time datetime="2019-01-22T15:19:51.000Z" itemprop="datePublished">2019-01-22</time>
+      <a href="/2019/02/04/Algorithm_learning_week1/" class="article-date">
+      <time datetime="2019-02-04T07:48:00.000Z" itemprop="datePublished">2019-02-04</time>
 </a>
 
 
@@ -263,7 +264,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      404 Not Found：该页无法显示
+      算法学习第一周
     </h1>
   
 
@@ -273,6 +274,10 @@
         
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习/">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -280,36 +285,209 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
-
-
-          
-        
+        <h2 id="第一周学习算法-一定要坚持到底"><a href="#第一周学习算法-一定要坚持到底" class="headerlink" title="第一周学习算法,一定要坚持到底!"></a>第一周学习算法,一定要坚持到底!</h2><blockquote>
+<p>如果放弃太早，你永远都不知道自己会错过什么；</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h2><h3 id="统称类型-线性表"><a href="#统称类型-线性表" class="headerlink" title="统称类型:线性表"></a>统称类型:线性表</h3><ol>
+<li><strong>数据对象集:</strong>n(&gt;=0)个元素构成的有序序列(a~1~,a~2~,…,a~i~,…,a~n~)</li>
+<li><strong>操作集:</strong>一个List,整数i表示位置,元素X∈ 某种元素类型(统称为:ElementType)<ul>
+<li>List MakeEmpty(){};<ul>
+<li>//初始化一个空的线性表</li>
+</ul>
+</li>
+<li>ElementType FindKth(int K,List L){};<ul>
+<li>//根据位序K,返回相应元素</li>
+</ul>
+</li>
+<li>int Find(ElementType X, List L){};<ul>
+<li>//在线性表L中查找元素X的第一次出现位置</li>
+</ul>
+</li>
+<li>void Insert(ElementType X,int i,List L){};<ul>
+<li>//在位序i前插入一个新元素X</li>
+</ul>
+</li>
+<li>void Delete(int i,List L){};<ul>
+<li>删除指定位序i的元素</li>
+</ul>
+</li>
+<li>int Length(List L){};<ul>
+<li>返回线性表L的长度n</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="引例-多项式表示"><a href="#引例-多项式表示" class="headerlink" title="引例:多项式表示"></a>引例:多项式表示</h3><ol>
+<li><strong>表示多项式的关键数据</strong><ul>
+<li>多项式项数</li>
+<li>各项系数:    a[i]</li>
+<li>变量指数:      i </li>
+</ul>
+</li>
+<li><strong>顺序存储结构直接表示 </strong><ul>
+<li>会出现许多无效的非零项</li>
+</ul>
+</li>
+<li><strong>顺序存储结构仅表示非零项(利用二元数组)</strong><ul>
+<li>结构数组<ul>
+<li>多项式存储方法:   将数组中指数按大小顺序重新排列</li>
+<li>多项式相加过程:    将多数组中指数比较大小并重新排列</li>
+</ul>
+</li>
+<li>链表<ul>
+<li>多项式存储方法:   将数组中指数按大小顺序重新排列</li>
+<li>多项式相加过程:    将多数组中指数比较大小并重新排</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="统称类型-多重链表-广义表"><a href="#统称类型-多重链表-广义表" class="headerlink" title="统称类型:多重链表(广义表)"></a>统称类型:多重链表(广义表)</h3><ol>
+<li><strong>特点</strong><ul>
+<li>可能会有多个指针域</li>
+</ul>
+</li>
+</ol>
+<h3 id="引例-矩阵表示"><a href="#引例-矩阵表示" class="headerlink" title="引例:矩阵表示"></a>引例:矩阵表示</h3><ol>
+<li><strong>表示数组的关键数据</strong><ul>
+<li>数据域:行坐标,列坐标,数值</li>
+<li>节点域:行(右)指针,列指针</li>
+</ul>
+</li>
+<li><strong>二维数组表示</strong><ul>
+<li>大小需要提前确定</li>
+<li>稀疏矩阵会造成存储空间浪费</li>
+</ul>
+</li>
+<li><strong>多重链表(十字链表)表示</strong></li>
+</ol>
+<h3 id="统称类型-堆栈"><a href="#统称类型-堆栈" class="headerlink" title="统称类型:堆栈"></a>统称类型:堆栈</h3><ol>
+<li><strong>数据对象集:一个有0个或多个元素的有穷线性表</strong></li>
+<li><strong>操作集</strong><ul>
+<li>Stack CreateStack (int MaxSize);<ul>
+<li>生成空堆栈,最大长度为MaxSize</li>
+</ul>
+</li>
+<li>int IsFull (Stack S,int MaxSize);<ul>
+<li>判断堆栈是否已满</li>
+</ul>
+</li>
+<li>Void Push (Stack S,ElementType item);<ul>
+<li>将元素item压入堆栈</li>
+</ul>
+</li>
+<li>int IsEmpty (Stack S);<ul>
+<li>判断堆栈是否为空</li>
+</ul>
+</li>
+<li>ElementType Pop (Stack S);<ul>
+<li>删除并返回栈顶元素</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="统称类型-队列"><a href="#统称类型-队列" class="headerlink" title="统称类型:队列"></a>统称类型:队列</h3><ol>
+<li><strong>数据对象集</strong>:一个有个或多个元素的有穷线性表.</li>
+<li><strong>操作集</strong>:长度为MaxSize的队列Q∈Queue,队列元素item∈ElementType<ul>
+<li>Queue CreatQueue(int MaxSize);<ul>
+<li>生成长度为MaxSize的空队列</li>
+</ul>
+</li>
+<li>int IsFullQ(Queue Q,int MaxSize);<ul>
+<li>判断队列Q是否已满</li>
+</ul>
+</li>
+<li>void AddQ(Queue Q,ElemenType item);<ul>
+<li>将数据item插入队列Q中</li>
+</ul>
+</li>
+<li>int IsEmptyQ(Queue Q);<ul>
+<li>判断队列Q是否为空</li>
+</ul>
+</li>
+<li>ElementType DeleteQ(Queue Q);<ul>
+<li>将队列头数据从队列中删除并返回</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="引例-队列表示"><a href="#引例-队列表示" class="headerlink" title="引例:队列表示"></a>引例:队列表示</h3><ol>
+<li><strong>表示队列的关键数据</strong><ul>
+<li>头元素</li>
+<li>尾元素</li>
+<li>数据元素</li>
+</ul>
+</li>
+<li><strong>顺序存储结构表示 </strong><ul>
+<li>结构数组</li>
+<li>链表</li>
+</ul>
+</li>
+</ol>
+<h3 id="实例-多项式加法和乘法运算的实现"><a href="#实例-多项式加法和乘法运算的实现" class="headerlink" title="实例:多项式加法和乘法运算的实现"></a>实例:多项式加法和乘法运算的实现</h3>
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2019/02/04/Algorithm_learning_week1/">算法学习第一周</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">大傻瓜</a></p>
+        <p><span>发布时间:</span>2019-02-04, 15:48:00</p>
+        <p><span>最后更新:</span>2019-02-04, 15:48:00</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/02/04/Algorithm_learning_week1/" title="算法学习第一周">https://charvin.cn/2019/02/04/Algorithm_learning_week1/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://charvin.cn/2019/02/04/Algorithm_learning_week1/　　作者: 大傻瓜" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2019/01/23/HTML tags/">
+                    HTML 标记标签
+                </a>
+            </div>
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第一周学习算法-一定要坚持到底"><span class="toc-number">1.</span> <span class="toc-text">第一周学习算法,一定要坚持到底!</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#线性结构"><span class="toc-number">2.</span> <span class="toc-text">线性结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#统称类型-线性表"><span class="toc-number">2.1.</span> <span class="toc-text">统称类型:线性表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引例-多项式表示"><span class="toc-number">2.2.</span> <span class="toc-text">引例:多项式表示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#统称类型-多重链表-广义表"><span class="toc-number">2.3.</span> <span class="toc-text">统称类型:多重链表(广义表)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引例-矩阵表示"><span class="toc-number">2.4.</span> <span class="toc-text">引例:矩阵表示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#统称类型-堆栈"><span class="toc-number">2.5.</span> <span class="toc-text">统称类型:堆栈</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#统称类型-队列"><span class="toc-number">2.6.</span> <span class="toc-text">统称类型:队列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引例-队列表示"><span class="toc-number">2.7.</span> <span class="toc-text">引例:队列表示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实例-多项式加法和乘法运算的实现"><span class="toc-number">2.8.</span> <span class="toc-text">实例:多项式加法和乘法运算的实现</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-6 i,
+        .toc-level-6 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
@@ -327,7 +505,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"404 Not Found：该页无法显示　| charvin's blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"算法学习第一周　| charvin's blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -340,6 +518,26 @@
 
 
 
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2019/01/23/HTML tags/" title="下一篇: HTML 标记标签">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/02/04/Algorithm_learning_week1/">算法学习第一周</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/23/HTML tags/">HTML 标记标签</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/23/Markdown For Typora/">Markdown For Typora</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/01/22/hello-world/">hello-word</a></li></ul>
 
 
 
