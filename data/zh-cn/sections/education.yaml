@@ -1,0 +1,109 @@
+# section information
+section:
+  name: 教育经历
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+  - name: todo. 博士学位
+    icon: fa-microscope
+    timeframe: 9999-9999
+    institution:
+      name: todo.
+      url: "#"
+    # grade: #(optional)
+    #   scale: CGPA
+    #   achieved: 3.6
+    #   outOf: 4
+    # publications: #(optional)
+    #   - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    #     url: "#"
+    #   - title: Fusce eu augue ut odio porttitor pulvinar.
+    #     url: "#"
+    #   - title: Nullam vitae orci tincidunt purus viverra pulvinar.
+    #     url: "#"
+
+  - name: 信息与通信工程专业硕士学位
+    icon: fa-graduation-cap
+    timeframe: 2021-2024
+    institution:
+      name: 苏州大学
+      url: "https://www.suda.edu.cn/"
+    publications: #(optional)
+      - title: todo.
+        url: "#"
+    # grade: #(optional)
+    #   scale: GPA
+    #   achieved: 3.4
+    #   outOf: 5
+    # takenCourses: #(optional)
+    #   # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    #   showGrades: true
+    #   collapseAfter: 3
+    #   courses:
+    #     - name: Data Structures and Algorithm
+    #       achieved: 3.75
+    #       outOf: 4
+    #     - name: Network Security
+    #       achieved: 3.80
+    #       outOf: 4
+    #     - name: Operating System
+    #       achieved: 3.5
+    #       outOf: 4
+    #     - name: Artificial Intelligent
+    #       achieved: 3.75
+    #       outOf: 4
+
+    # extracurricularActivities: #(optional)
+    #   - In vitae facilisis est, eget porta sem.
+    #   - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
+    #   - Duis sed massa feugiat, ornare justo et, aliquam est.
+    #   - Pellentesque ut fringilla magna.
+
+  - name: 光电信息科学与工程专业学士学位
+    icon: fa-university
+    timeframe: 2017-2021
+    institution:
+      name: 济南大学
+      url: "https://www.ujn.edu.cn/"
+    grade: #(optional)
+      scale: GPA
+      achieved: 3.4
+      outOf: 5
+    # takenCourses: #(optional)
+    #   # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    #   showGrades: true
+    #   collapseAfter: 3
+    #   courses:
+    #     - name: Data Structures and Algorithm
+    #       achieved: 3.75
+    #       outOf: 4
+    #     - name: Network Security
+    #       achieved: 3.80
+    #       outOf: 4
+    #     - name: Operating System
+    #       achieved: 3.5
+    #       outOf: 4
+    #     - name: Artificial Intelligent
+    #       achieved: 3.75
+    #       outOf: 4
+    # extracurricularActivities: #(optional)
+    #   - In vitae facilisis est, eget porta sem.
+    #   - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
+    #   - Duis sed massa feugiat, ornare justo et, aliquam est.
+    #   - Pellentesque ut fringilla magna.
+
+  # - name: Secondary School Certificate
+  #   icon: fa-school
+  #   timeframe: 2005-2010
+  #   institution:
+  #     name: JK School of Science
+  #   grade: #(optional)
+  #     scale: GPA
+  #     achieved: 4.5
+  #     outOf: 5

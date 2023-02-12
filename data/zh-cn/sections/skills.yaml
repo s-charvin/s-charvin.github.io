@@ -1,0 +1,42 @@
+# section information
+section:
+  name: 职业技能
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+  - name: Python
+    logo: /images/sections/skills/python.png
+    summary: "了解基本的 Python 编程语法."
+    url: "https://www.python.org/"
+
+  - name: Pytorch
+    logo: /images/sections/skills/pytorch.png
+    summary: "作为算法学习的主要框架"
+    url: "https://pytorch.org/"
+
+  - name: Docker
+    logo: /images/sections/skills/docker.svg
+    summary: "了解 docker 的基本使用方法."
+    url: "https://www.docker.com/"
+
+  - name: Linux
+    logo: /images/sections/skills/linux.png
+    summary: "了解 linux 的一些基本指令, 一般在使用服务器进行远程开发时使用."
+    url: "https://www.linux.org/"
+
+  - name: Git
+    logo: /images/sections/skills/git.png
+    summary: "有基于 git 的开发经验, 大多数情况下, 使用 Github."
+    url: "https://git-scm.com/"
+
+  - name: C++
+    logo: /images/sections/skills/c++.png
+    summary: "了解基本的 C/C++ 编程语法."
+    url: "https://isocpp.org/"

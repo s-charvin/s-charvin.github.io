@@ -1,0 +1,102 @@
+# section 信息
+section:
+  name: 关于
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# 工作
+designation: 研究生
+# your company information
+company:
+  name: 苏州大学 (Soochow University)
+  url: "https://www.suda.edu.cn/"
+
+# 个人总结
+summary: |
+  一名充满激情的应届生, 虽然没有工作经验, 但我学习过 C++, Python 和一些前端语言, 
+  有着充足的自学热情, 我喜欢学习有趣的开源项目, 也希望能有自己的开源成果, 
+  因此十分迫切想要寻找一个能继续督促我进一步增强能力的地方.
+
+# 社交链接
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "1911523105@qq.com"
+
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://www.github.com/example"
+
+  - name: 微信
+    icon: "fab fa-weixin"
+    url: "./images/site/weixin.png"
+
+  - name: QQ
+    icon: "fab fa-qq"
+    url: "http://wpa.qq.com/msgrd?v=3&uin=1911523105&site=qq&menu=yes"
+
+  # - name: Stackoverflow
+  #   icon: "fab fa-stack-overflow"
+  #   url: "#"
+
+  # - name: LinkedIn
+  #   icon: "fab fa-linkedin"
+  #   url: "#"
+
+  # - name: Twitter
+  #   icon: "fab fa-twitter"
+  #   url: "#"
+
+  # - name: Facebook
+  #   icon: "fab fa-facebook"
+  #   url: "#"
+
+  # - name: Mastadon
+  #   icon: "fab fa-mastodon"
+  #   url: "#"
+  #   rel: "me noopener"
+
+# 可以放置​​自定义按钮来链接您的相关资源。例如，您可以为您的简历添加链接。
+resourceLinks:
+  - title: "我的简历"
+    url: "files/resume.pdf"
+
+# 展示你的证书和技能条
+badges:
+  # - type: certification
+  #   name: 四六级证书
+  #   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+  #   badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
+
+  # - type: certification
+  #   name: 计算机二级证书
+  #   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
+  #   badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
+
+  # - type: certification
+  #   name: 毕业证书
+  #   url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
+  #   badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
+
+  - type: soft-skill-indicator
+    name: Leadership
+    percentage: 0
+    color: blue
+
+  - type: soft-skill-indicator
+    name: Team Work
+    percentage: 50
+    color: yellow
+
+  - type: soft-skill-indicator
+    name: Hard Working
+    percentage: 100
+    color: orange
+# 您还可以提供颜色代码而不是颜色名称
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"

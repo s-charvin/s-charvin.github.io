@@ -1,0 +1,18 @@
+# some information about you
+name: "一名憨憨 的个人博客"
+nickname: "一名憨憨 的个人博客"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "欢迎噢! 这里是"
+image: "images/author/me.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "1911523105@qq.com"
+  phone: "+0123456789"
+  github: s-charvin
+  # linkedin: johndoe
+
+# some summary about what you do
+summary:
+  - 一名在校生
+  - 喜欢计算机和机器人
+  - 热衷于开源项目

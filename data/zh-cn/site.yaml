@@ -1,0 +1,25 @@
+# Copyright Notice
+copyright: "© 2019 Copyright."
+
+# 页脚的免责声明
+disclaimer: "本站为个人博客, 博客所发布的一切信息及文章仅限用于学习和研究目的; 不得将上述内容用于商业或者非法用途, 否则, 一切后果请用户自负."
+
+# 您网站的元描述, 有助于搜索引擎记录
+description: 石昌文的个人博客.
+
+# 指定顶部导航栏中显示的自定义菜单列表, 将被主菜单中的分隔线隔开
+customMenus:
+  - name: Docs
+    url: https://s-charvin.github.io/
+    # 指定是否从顶部导航栏隐藏菜单项
+    hideFromNavbar: true
+    # 指定是否在页脚中显示菜单项
+    showOnFooter: false
+
+# Specify OpenGraph Headers
+openGraph:
+  title: Charvin's Blog
+  type: website
+  description: 石昌文的个人博客.
+  image: images/author/me.png
+  url: https://s-charvin.github.io/

@@ -1,0 +1,289 @@
+baseURL: https://s-charvin.github.io
+
+languageCode: zh-cn
+title: "一名憨憨"
+ignoreErrors: ["error-remote-getjson"]
+# Use Hugo modules to add theme
+
+module:
+  imports:
+    - path: my_toha
+  mounts:
+    - source: ./node_modules/flag-icon-css/flags
+      target: static/flags
+    - source: ./node_modules/@fontsource/mulish/files
+      target: static/files
+    - source: ./node_modules/katex/dist/fonts
+      target: static/fonts
+# Manage languages
+# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
+languages:
+  zh-cn:
+    languageName: 中文
+    weight: 1
+  en:
+    languageName: English
+    weight: 2
+
+# 强制使用语言环境，这对开发应用程序非常有用！
+DefaultContentLanguage: zh-cn
+
+markup:
+  goldmark:
+    renderer:
+      # 允许生成 html 文件
+      unsafe: false
+  # 允许生成文章目录
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+# html 内容和 json 内容搜索
+# At least HTML and JSON are required for the main HTML content and client-side JavaScript search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# 支持 Emoji 表情
+enableEmoji: true
+
+# 网页参数
+params:
+  # 背景图
+  background: /images/site/background.jpg
+
+  # 网页 logo
+  logo:
+    main: /images/site/main-logo.png
+    inverted: /images/site/inverted-logo.png
+    favicon: /images/site/favicon.png
+
+  # 博客项目的存储库地址, 用于生成文章的编辑链接
+  gitRepo: https://github.com/s-charvin/s-charvin.github.io
+  # Git 仓库的默认分支
+  gitBranch: master
+
+  # 配置顶部导航栏中可见的部分标题数
+  topNavbar:
+    maxVisibleSections: 5
+
+  # 功能设置
+  features:
+    # 暗黑模式
+    darkMode:
+      enable: false
+      services:
+        darkreader:
+          defaultColorScheme: system # options are 'system', 'dark', 'light'
+          fixes:
+            invert: ['img[src$=".svg"]'] # 反转 svg 颜色
+          theme:
+            brightness: 100
+            contrast: 100
+            sepia: 0
+
+    # 启用作品集
+    portfolio:
+      enable: true
+
+    # 启用和配置博客文章
+    blog:
+      enable: true
+      # Share post on different social media
+      shareButtons: # 分享文章按钮
+        email: true
+        facebook: true
+        qq: true
+        weixin: true
+        # twitter: true
+        # linkedin: true
+        # reddit: true
+        # whatsapp: true
+        # tumblr: true
+        # pocket: true
+        # diaspora: true
+        # mastodon: true
+        # qzone: true
+
+    # 启用和配置笔记功能
+    notes:
+      enable: true
+
+    # 启用评论功能.
+    comment:
+      enable: true
+      services:
+        # disqus:
+        #   shortName: toha-example-site
+        valine:
+          appId: tvE3bbaFWRzxKq8LQezjHBFd-gzGzoHsz
+          appKey: ndot7TrDyZtR1AQnYv2BAtlg
+          avatar: retro
+          placeholder: |
+            👋 欢迎! 这里使用的 valine 为访客提供评论功能. 在评论之前, 希望你可以:
+            - 为想知道的问题提供详细的信息(背景, 具体内容, 等).
+            - 友善的表达意见.积极的与其他成员互动, 互帮互助💪.
+            - 多支持下互联网的开放氛围.
+          lang: zh-cn
+          recordIP: true
+          enableQQ: true
+        # utteranc:
+        #   repo: github.com/hugo-toha/hugo-toha.github.io
+        #   issueTerm: title
+        #   theme: github-light
+        # giscus:
+        #   repo: your-repo/name
+        #   repoID: your-repo-id
+        #   category: your-category
+        #   categoryID: your-category-id
+        # theme: light
+        # map: url
+        # reaction: 1
+        # metadata: 0
+        # inputPosition: bottom
+        # crossOrigin: anonymous
+        # commento:
+        #   serverURL: cdn.commento.io
+        #   autoInit: true
+        #   hideDeleted: false
+
+    # 启用分析统计功能
+    analytics:
+      enabled: true
+      services:
+        # # Google Analytics
+        # google:
+        #   id: G-H4LBG7NDFZ
+        # # CounterDev
+        counterDev:
+          id: 2c350262-0d15-47a5-92d6-c0df5d7464e0
+        # # GoatCounter
+        # goatCounter:
+        #   code: <your goat counter code>
+        # Matomo / Piwik
+        # matomo:
+        #   instance: matomo.example.com
+        #   siteId: 1 # Or any other number
+
+    # 启用赞助功能
+    support:
+      enable: false
+      services:
+        kofi:
+          user: hossainemruz
+          text: Tip Me
+          textColor: "#f9fafc"
+          backgroundColor: "#248aaa"
+        # buymeacoffee:
+        #   user: <your buymeacoffee.com user>
+        #   text: Support me on Buy me a coffee!
+        #   info: Buy me a coffee!
+        #   color: '#FFDD00'
+
+    # 启用阅读页面目录显示功能
+    toc:
+      enable: true
+
+    # 启用文章标签显示功能(标题下)
+    tags:
+      enable: true
+
+    # 指定是否在语言选择器中显示标志. Default is true.
+    flags:
+      enable: true
+      # # If you want to use different country flag for a language, specify them here.
+      # flagOverwrites:
+      #   - languageCode: en
+      #     countryCode: us
+
+    # 启用 markdown 的 pdf 文档嵌入功能 `embed-pdf` shortcode.
+    embedpdf:
+      enable: true
+
+    # 启用 markdown 的 mermaid 功能, 支持短代码创建流程图
+    flowchart:
+      enable: true
+      services:
+        # Uncomment for `mermaid` shortcode.
+        mermaid:
+          # For config options, see: https://mermaid-js.github.io/mermaid/#/Setup?id=configuration
+          # theme: dark
+
+    # 启用 markdown 的数学表达式渲染功能 `$$`
+    math:
+      enable: true
+      services:
+        # https://katex.org/docs/autorender.html#api for more configurations
+        katex:
+          delimiters:
+            - left: $$
+              right: $$
+              display: true
+            - left: \\[
+              right: \\]
+              display: true
+            - left: $
+              right: $
+              display: true
+            - left: \\(
+              right: \\)
+              display: false
+
+    # 启用自定义的语法高亮功能
+    # Please note, Hugo comes with it's own html based syntax highlighter.
+    # Your code block will still be syntax highlighted by hugo.
+    # For more details: https://gohugo.io/content-management/syntax-highlighting/
+    # To disable Hugo's builtin syntax highlight,
+    # see: https://gohugo.io/getting-started/configuration-markup#highlight
+    # ```
+    # # config.yaml
+    # markup:
+    #   # this disables hugo's syntax highlighting.
+    #   codeFences: false
+    # ```
+    syntaxHighlight:
+      enable: true
+      services:
+        hljs:
+          # see: https://highlightjs.readthedocs.io/en/latest/api.html#configure
+          noHighlightRe: /^no-highlight$/i
+
+    # 启用视频播放器简码 `video-player` shortcode
+    videoPlayer:
+      enable: true
+      services:
+        # convert .js-player class into video player via https://plyr.io/
+        # Can play HTML5 Video, Audio, Youtube, Vimeo.
+        # For more info on setup: https://github.com/sampotts/plyr#quick-setup
+        plyr:
+          # options doc: https://github.com/sampotts/plyr#options
+          # fullscreen: true
+
+  # 页脚配置
+  footer:
+    enable: true
+    # 可以通过 "layouts/partials" 中的 `footer.html` 文件自定义页脚显示方式
+    template: footer.html
+    # 启用页脚显示主页面导航部分功能
+    navigation:
+      enable: true
+      # show custom menus in the footer
+      customMenus: true
+    # 启用页脚显示“联系我”部分功能
+    contactMe:
+      enable: true
+    # Show/hide credentials section in the footer. Default is "true".
+    credentials:
+      enable: true
+    # 在页脚中显示通讯请求部分.
+    newsletter:
+      enable: true
+      provider: mailchimp
+      mailchimpURL: https://qq.us21.list-manage.com/subscribe/post?u=665dc40df39c247708ccfed9b&amp;id=60344144a3&amp;
+
+    # 在页脚中显示免责声明
+    disclaimer:
+      enable: true
